@@ -1,6 +1,11 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <h1>Welcome to Your Vue.js App</h1>
-  </div>
+    <div id="app">
+        <vue-web-cam height="500" width="500"/>
+    </div>
 </template>
+
+<script>
+    import Vue from 'vue'
+    import { WebCam } from 'vue-web-cam';
+    Vue.use(WebCam);
+</script>
